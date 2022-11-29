@@ -10,6 +10,9 @@ if latex:
     plt.rcParams['text.latex.preambule'] = [r'\usepackage[utf8]{inputenc}']
     plt.rcParams['text.latex.preambule'] = [r'\usepackage[russian]{babel}']
     
+    
+plt.rcParams['figure.dpi'] = 500
+    
 plt.rcParams['font.family'] = 'serif'
 plt.rcParams['font.size'] = 12
 plt.rcParams['image.cmap'] = 'Set1'
@@ -17,7 +20,7 @@ plt.rcParams['figure.constrained_layout.use'] = True
 plt.rcParams['figure.constrained_layout.w_pad'] = 0
 plt.rcParams['figure.constrained_layout.h_pad'] = 0
 
-plt.rcParams['figure.dpi'] = 300
+
 plt.rcParams['legend.loc'] = 'upper left'
 plt.rcParams['axes.titlesize'] = 12
 plt.rcParams['legend.fontsize'] = 10
@@ -32,9 +35,10 @@ plt.rcParams['lines.antialiased'] = True
 plt.rcParams['lines.color'] = 'red'
 plt.rcParams['svg.fonttype'] = 'none'
 
+
 # plt.rcParams['']
 # plt.rcParams['']
 # plt.rcParams['']
 def set_size(ratio=0.618):
-    width = 10
+    width = 15
     return (width, ratio*width)
